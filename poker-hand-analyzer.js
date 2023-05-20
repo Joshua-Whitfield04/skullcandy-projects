@@ -153,9 +153,6 @@ var determine_hand = function (river, hand=false) {
   }
 
   var FourOfAKind = function () {
-    if (Flush()) {return false}
-    if (Straight()) {return false}
-    
     var count=0;
     for (item of Object.values(get_instances(vl))) {
       if (item == 4) {count+=1}
